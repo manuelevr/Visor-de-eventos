@@ -1,0 +1,63 @@
+/* Clase para información (info) */
+.info > div,
+.err > div,
+.warn > div {
+  /* Estilos comunes para los párrafos y botones dentro de .contenedor-padre */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  width: 60%; /* Puedes ajustar el valor según tus necesidades */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+@media (max-width: 768px) {
+  .MuiDataGrid-cell:not(.err):not(.warn):not(.info) {
+    font-size:150%; /* Tamaño de fuente más pequeño para pantallas móviles */
+  }}
+.info > div {
+  background-color: #007FFF;
+}
+@media screen and (max-width: 768px) {
+  .MuiCardHeader-root span  {
+    font-size: 1.2rem; /* Ajusta el tamaño de fuente según tus preferencias */
+  }
+}
+@media screen and (max-width: 768px) {
+  .MuiTypography-root p {
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente según tus preferencias */
+  }
+}
+@media screen and (max-width: 768px) {
+  .PaperProps {
+    
+      width: 80% ;
+      height:120vh; 
+      maxWidth:600px;
+      maxHeight:800vh;
+    
+  }
+}
+.err > div {
+ background-color: red;
+
+}
+
+.warn > div {
+  background-color: orange;
+}
+
+/* DataTable.css 
+.custom-data-table {
+ 
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.custom-cell {
+  /* Estilos para las celdas 
+  font-weight: bold;
+  color: blue;
+}
+*/
